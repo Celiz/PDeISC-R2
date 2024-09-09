@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import {ImageGallery} from './components/ImagenGallery/ImageGallery';
+import {ValidatedForm} from './components/ValidatedForm/ValidatedForm';
+import {GuessingGame} from './components/GuessingNumber/GuessingNumber';
+import {ClickButtons} from './components/ClickButtons/ClickButtons';
+import {NoteApp} from './components/NoteApp/NoteApp';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1 className="app-title">Aplicación Interactiva React</h1>
+      <ImageGallery />
+      <ValidatedForm />
+      <GuessingGame />
+      <ClickButtons />
+      <NoteApp />
     </div>
   );
-}
+};
 
 export default App;
